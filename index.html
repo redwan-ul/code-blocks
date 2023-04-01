@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Blocks with Copy Button</title>
+  <link href="./libs/style.css" rel="stylesheet" />
+  <link href="./libs/prism-tomorrow.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Code Blocks with Copy Button</h1>
+    <div class="code-block">
+      <div class="code-header">HTML Example</div>
+      <pre><code class="language-html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Example&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;h1&gt;Hello World!&lt;/h1&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+      <button class="copy-btn">Copy</button>
+    </div>
+    <div class="code-block">
+      <div class="code-header">CSS Example</div>
+      <pre><code class="language-css">
+            body {
+              font-family: Arial, sans-serif;
+              font-size: 16px;
+              line-height: 1.5;
+              color: #333;
+            }
+  
+            h1 {
+              font-size: 24px;
+              font-weight: bold;
+            }
+  
+            p {
+              margin-bottom: 10px;
+            }
+          </code></pre>
+      <button class="copy-btn">Copy</button>
+    </div>
+    <div class="code-block">
+      <div class="code-header">JavaScript Example</div>
+      <pre><code class="language-js">
+            const greeting = "Hello World!";
+            console.log(greeting);
+          </code></pre>
+      <button class="copy-btn">Copy</button>
+    </div>
+    <div class="code-block">
+      <div class="code-header">PHP Example</div>
+      <pre><code class="language-php">
+            &lt;?php
+              $message = "Hello World!";
+              echo $message;
+            ?&gt;
+          </code></pre>
+      <button class="copy-btn">Copy</button>
+    </div>
+    <div class="code-block">
+      <div class="code-header">Python Example</div>
+      <pre><code class="language-python">
+            message = "Hello World!"
+            print(message)
+          </code></pre>
+      <button class="copy-btn">Copy</button>
+    </div>
+  </div>
+  <script src="./libs/script.js"></script>
+  <script src="./libs/prism.min.js"></script>
+  <script src="./libs/prism-clike.min.js"></script>
+  <script src="./libs/prism-javascript.min.js"></script>
+  <script src="./libs/clipboard.min.js"></script>
+</body>
+</html>

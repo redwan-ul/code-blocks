@@ -1,0 +1,87 @@
+  /* Global styles */
+  body {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+
+  /* Code block styles */
+  .code-block {
+    position: relative;
+    margin-bottom: 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .code-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+  }
+
+  pre {
+    margin: 0;
+    padding: 10px;
+    overflow-x: auto;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Copy button styles */
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ddd;
+    color: #666;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+
+  .copy-btn:hover {
+    background-color: #bbb;
+  }
+
+  .copied {
+    background-color: #000000 !important;
+    color: #fff !important;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    pre {
+      font-size: 12px;
+    }
+
+
+
+    .copy-btn {
+      font-size: 10px;
+      padding: 3px 5px;
+    }
+  }
