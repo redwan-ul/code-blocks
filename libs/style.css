@@ -48,29 +48,37 @@
   }
 
   /* Copy button styles */
-  .copy-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #ddd;
-    color: #666;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    z-index: 1;
-  }
+      .copy-button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 0;
+    }
 
-  .copy-btn:hover {
-    background-color: #bbb;
-  }
+    .copy-button i {
+      font-size: 23px;
+      /* Adjust the font-size to make the icon smaller */
+      transform: scale(0.7);
+      /* Adjust the scale value to make the icon smaller */
+    }
 
-  .copied {
-    background-color: #000000 !important;
-    color: #fff !important;
-  }
+    .copy-success {
+      display: none;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+
+    .copy-success i {
+      font-size: 23px;
+      /* Adjust the font-size to make the icon smaller */
+      transform: scale(0.7);
+      /* Adjust the scale value to make the icon smaller */
+    }
 
   /* Responsive styles */
   @media screen and (max-width: 768px) {
